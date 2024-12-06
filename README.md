@@ -17,11 +17,3 @@ The compiler processes a simple programming language with constructs like `if-el
 
 ---
 
-## **How to Run**
-
-### **Prerequisites**
-
-#### For macOS
-1. Install **Flex** and **Bison** using Homebrew:
-   ```bash
-   brew install flex bison
