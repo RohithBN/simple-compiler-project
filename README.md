@@ -1,24 +1,27 @@
-Compiler Project using Lex and Yacc
+# **Compiler Project using Lex and Yacc**
 
-This project implements a simple compiler using Lex (for lexical analysis) and Yacc (for syntax analysis).
-The compiler processes a simple programming language with constructs like if-else, variable declarations, assignments, and arithmetic expressions.
+This project implements a simple compiler using **Lex** (for lexical analysis) and **Yacc** (for syntax analysis).  
+The compiler processes a simple programming language with constructs like `if-else`, variable declarations, assignments, and arithmetic expressions.
 
+---
 
-How to Run
+## **Features**
 
-Prerequisites
-Flex and Bison: Install them using Homebrew:
-brew install flex bison
-GCC: Ensure GCC is installed for compiling the generated C files.
-Steps to Run
-Clone the repository:
-git clone https://github.com/your-username/compiler-project.git
-cd compiler-project
-Generate the lexical analyzer:
-flex lex.l
-Generate the syntax analyzer:
-bison -d parser.y
-Compile the generated files:
-gcc lex.yy.c parser.tab.c -o compiler
-Run the compiler with a test file:
-./compiler < input.txt
+- Tokenizes input code using **Lex**.
+- Parses tokens and verifies grammar using **Yacc**.
+- Supports constructs like:
+  - Variable declarations (`int`, `float`).
+  - Arithmetic operations (`+`, `-`, `*`, `/`).
+  - Conditional statements (`if`, `else`).
+- Error handling for unknown tokens and syntax errors.
+
+---
+
+## **How to Run**
+
+### **Prerequisites**
+
+#### For macOS
+1. Install **Flex** and **Bison** using Homebrew:
+   ```bash
+   brew install flex bison
